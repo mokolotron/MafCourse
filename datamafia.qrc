@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>unknown.png</file>
+        <file>citizen.png</file>
+        <file>mafia.png</file>
+        <file>doctor.png</file>
+        <file>citizenDeath.png</file>
+        <file>mafiaDeath.png</file>
+        <file>doctorDeath.png</file>
+    </qresource>
+    <qresource prefix="/data">
+        <file>nameMen.txt</file>
+        <file>nameWomen.txt</file>
+    </qresource>
+</RCC>
