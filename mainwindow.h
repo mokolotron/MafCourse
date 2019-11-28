@@ -30,6 +30,10 @@ private slots:
     void deletePlayerButtonPush();      //вызывает удаление игрока, выделенного в таблице tableGame
     void on_tableGame_itemSelectionChanged();   //при нажатии вне таблицы, снимает с неё выделение
 
+    void on_buttonOK_clicked();
+
+    void on_buttonOK_pressed();
+
 protected:virtual void mousePressEvent(QMouseEvent *e);
 
 private:

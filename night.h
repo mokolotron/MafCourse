@@ -4,7 +4,7 @@
 
 #include "daystart.h"
 #include "gamestep.h"
-#include "night.h"
+
 
 class Night : public GameStep
 {

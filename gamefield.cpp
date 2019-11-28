@@ -70,6 +70,7 @@ void GameField::giveRole(){//дать роли игрокам
                 doc = qrand() % amountPlayers;
             } while (mafia.contains(doc));
         }
+
         //create players
         for (int i = 0; i < amountPlayers; i++)
         {
