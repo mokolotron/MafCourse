@@ -10,11 +10,7 @@ GameForm::GameForm(QWidget *parent) :
 
     this->setFixedSize(this->geometry().width(), this->geometry().height());
 
-    heightTab = ui->tableWidget->height();
 
-    ui->tableWidget->setColumnCount(ui->tableWidget->columnCount() + 1);
-    ui->tableWidget->setColumnWidth(0, ui->tableWidget->width() - 15);
-    ui->tableWidget->setFocusPolicy(Qt::NoFocus);
 
     ui->labelAlivePlayers->setText("Мафиози: 0\nГорожане: 0\nДоктор: 0");
 
@@ -38,38 +34,27 @@ void GameForm::addToChat(QString str){
     if(firstStr == ""){
         firstStr = "\n\n" + str;
     }
-    else {
-        ui->tableWidget->item(0,0)->setText(firstStr);
-    }
+
     //add elem to chat
-    ui->tableWidget->setRowCount(ui->tableWidget->rowCount() + 1);
+
     QTableWidgetItem* item = new QTableWidgetItem();
     item->setText("\n\n" + str);
     item->setForeground(Qt::white);
-    ui->tableWidget->setItem(ui->tableWidget->rowCount() - 1, 0, item);
-    ui->tableWidget->resizeRowsToContents();
+
 
     int sum = 0;
-    for(int i = 0; i < ui->tableWidget->rowCount(); i++){
-        sum += ui->tableWidget->rowHeight(i);
-    }
+
     //add '\n' to make visibility of chat
     QString *a = new QString();
     for(int i = 0; i < (heightTab - sum) / 15; i++)
         *a += "\n";
     //empty space
     if(sum < heightTab)
-        ui->tableWidget->item(0,0)->setText(a + ui->tableWidget->item(0,0)->text());
-    ui->tableWidget->resizeRowsToContents();
-    //scroll to buttom
-    ui->tableWidget->scrollToBottom();
+
 
     delete a;
 }
-void GameForm::clearChat(){
-    ui->tableWidget->setRowCount(0);
-    firstStr = "";
-}
+
 QLabel* GameForm::getLabelHost(){
     return ui->labelHost;
 }

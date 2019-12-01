@@ -74,7 +74,7 @@
     <rect>
      <x>10</x>
      <y>130</y>
-     <width>490</width>
+     <width>681</width>
      <height>350</height>
     </rect>
    </property>
@@ -89,45 +89,6 @@ border-radius: 5px</string>
    <property name="title">
     <string/>
    </property>
-  </widget>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>505</x>
-     <y>130</y>
-     <width>190</width>
-     <height>350</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <italic>false</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: #303030;
-border: 2px groove blue;</string>
-   </property>
-   <property name="sizeAdjustPolicy">
-    <enum>QAbstractScrollArea::AdjustIgnored</enum>
-   </property>
-   <property name="editTriggers">
-    <set>QAbstractItemView::NoEditTriggers</set>
-   </property>
-   <property name="tabKeyNavigation">
-    <bool>false</bool>
-   </property>
-   <property name="selectionMode">
-    <enum>QAbstractItemView::NoSelection</enum>
-   </property>
-   <attribute name="horizontalHeaderVisible">
-    <bool>false</bool>
-   </attribute>
-   <attribute name="verticalHeaderVisible">
-    <bool>false</bool>
-   </attribute>
   </widget>
  </widget>
  <resources/>

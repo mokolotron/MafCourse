@@ -92,7 +92,7 @@ void MainWindow::startGameButtonPush()//запуск формы с игрой
         if(amountPlayers > 2 && amountPlayers < 19)
         {
                 formGame->show();
-                formGame->clearChat();
+
                 GameManager->playGame();
         }
         else {
