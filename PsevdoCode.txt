@@ -1,0 +1,7 @@
+ui."ok"-> maindow.addAmountPlayersButton() -> controller::can_start_new();										
+				-> if( GameFiled :: getInstance()->->returnPlayers()->size() > 0)						
+					Massage( All old gamers will deleted)					
+						if(no) return				
+				if(amount < 3 || amount > 18)					//error	
+					Massage(" Gamers can be only 3-18")					
+					return					
